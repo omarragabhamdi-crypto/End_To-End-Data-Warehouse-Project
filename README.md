@@ -21,6 +21,7 @@ Data is ingested from CSV Files into SQL Server Database.
 ______________________________________________________________________________
 
 📝Project Requirements
+
 Building the Data Warehouse (Data Engineering)
 
 Objective
@@ -34,7 +35,10 @@ Scope: Focus on the latest dataset only; historization of data is not required.
 Documentation: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
 
 _____________________________________________________________________________
+
+
 🚩Repository Structure
+
 
 data-warehouse-project/
 │
