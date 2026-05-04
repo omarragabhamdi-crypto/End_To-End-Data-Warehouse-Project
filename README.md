@@ -12,51 +12,55 @@ The data architecture for this project follows Medallion Architecture Bronze, Si
 
 <img width="1938" height="1449" alt="Screenshot 2026-04-30 233912" src="https://github.com/user-attachments/assets/75e1c8b5-4faf-4e05-9e2b-acc5cd9a871d" />
 
-Bronze Layer: Stores raw data as-is from the source systems.
+1-Bronze Layer: Stores raw data as-is from the source systems.
 Data is ingested from CSV Files into SQL Server Database.
 
-Silver Layer: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
+2-Silver Layer: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
 
-Gold Layer: Houses business-ready data modeled into a star schema required for reporting and analytics.
+3-Gold Layer: Houses business-ready data modeled into a star schema required for reporting and analytics.
 ______________________________________________________________________________
 
-📌 Applied clear and consistent naming conventions across the project to ensure readability, maintainability, and to promote a collaborative team-friendly environment.
+📝Project Requirements
+Building the Data Warehouse (Data Engineering)
 
+Objective
+Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
 
-General Principles:
+Specifications
+Data Sources: Import data from two source systems (ERP and CRM) provided as CSV files.
+Data Quality: Cleanse and resolve data quality issues prior to analysis.
+Integration: Combine both sources into a single, user-friendly data model designed for analytical queries.
+Scope: Focus on the latest dataset only; historization of data is not required.
+Documentation: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
 
-  .Naming conventions :Using Snake_case with lowercase letters and underscore (_) separate words.
- 	.Language           :Using English for all Naming .
-	.Avoid Reserved Words : Do not using SQL Reserved Words AS Object Name .
-	
-Table Naming Conventions:
+_____________________________________________________________________________
+🚩Repository Structure
 
-Bronze Rules:
+data-warehouse-project/
+│
+├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
+│
+├── docs/                               # Project documentation and architecture details
+│   ├── etl.drawio                      # Draw.io file shows all different techniquies and methods of ETL
+│   ├── data_architecture.drawio        # Draw.io file shows the project's architecture
+│   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
+│   ├── data_flow.drawio                # Draw.io file for the data flow diagram
+│   ├── data_models.drawio              # Draw.io file for data models (star schema)
+│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
+│
+├── scripts/                            # SQL scripts for ETL and transformations
+│   ├── bronze/                         # Scripts for extracting and loading raw data
+│   ├── silver/                         # Scripts for cleaning and transforming data
+│   ├── gold/                           # Scripts for creating analytical models
+│
+├── tests/                              # Test scripts and quality files
+│
+├── README.md                           # Project overview and instructions
+├── LICENSE                             # License information for the repository
+├── .gitignore                          # Files and directories to be ignored by Git
+└── requirements.txt                    # Dependencies and requirements for the project
 
-  .All names Must Star with the source system name , and table names, must match their original names without renaming .EXAPLE :     crm_customer_info
-  
-Silver Rules:
-  .All names Must Star with the source system name , and table names, must match their original names without renaming .EXAPLE :     crm_customer_info
-  
-Gold Rules:
-All names Must Use Meaningful , Buisness _aligned names for tables starting with category prefix .
-
-Columns Rules:
-
-Surrogate Keys:
-
-.All primary keys in dimention tables must use _key ;
-EXAMPLE:
-
-customer_key.....Surrogate key in dim_cuatomers table
-
-Technical columns:
-
-All technical columns must start with prifx dwh_ ,folowing by a descriptive name indicating the column purose .
-
-EXample :_dwh_load_date : the system generated column used to store the date .
-
-______________________________________________________________________________
+_____________________________________________________________________________
 
 🎯 Objectives
 Design and implement a scalable Data Warehouse architecture
@@ -66,7 +70,7 @@ Perform data analysis to extract meaningful insights
 Simulate real-world Data Engineering workflows
 ______________________________________________________________________________
 🏗️ Architecture Overview
-🔄 ETL / ELT Process
+   ETL / ELT Process
 1. Extract
 Ingest raw data from multiple sources
 
