@@ -1,15 +1,16 @@
 📌 Project Title :
-
-( **End-to-End Data Warehouse & Analytics Pipeline** )
+( **End_To End Data Warehouse Project** )
 ______________________________________________________________________________
 📖 Project Description 
 
-Welcome to the **The Data Warehouse Project** This project demonstrates a complete End-to-End Data Engineering pipeline, starting from raw data ingestion to building a fully structured Data Warehouse and generating actionable business insights.
+Welcome to the The Data Warehouse Project :
+
+This project demonstrates a complete End-to-End Data Engineering pipeline, starting from raw data ingestion to building a fully structured Data Warehouse and generating actionable business insights,
+Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
 
 ______________________________________________________________________________
 🏗️ Data Architecture
-The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers: Data Architecture
-
+The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers: 
 <img width="1938" height="1449" alt="Screenshot 2026-04-30 233912" src="https://github.com/user-attachments/assets/75e1c8b5-4faf-4e05-9e2b-acc5cd9a871d" />
 
 1-Bronze Layer: Stores raw data as-is from the source systems.
@@ -43,7 +44,7 @@ _____________________________________________________________________________
 data-warehouse-project/
 
 │
-├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
+├── datasets/                                 # Raw datasets used for the project (ERP and CRM data)
 
 │
 ├── docs/                               # Project documentation and architecture details
@@ -51,41 +52,41 @@ data-warehouse-project/
 │   ├── etl.drawio                      # Draw.io file shows all different techniquies and methods of 
 
 ETL
-│   ├── data_architecture.drawio        # Draw.io file shows the project's architecture
+│   ├── data_architecture.drawio             # Draw.io file shows the project's architecture
 
-│   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and 
+│   ├── data_catalog.md                      # Catalog of datasets, including field descriptions and 
 
 metadata
 
-│   ├── data_flow.drawio                # Draw.io file for the data flow diagram
+│   ├── data_flow.drawio                             # Draw.io file for the data flow diagram
 
-│   ├── data_models.drawio              # Draw.io file for data models (star schema)
+│   ├── data_models.drawio                          # Draw.io file for data models (star schema)
 
-│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
-
-│
-
-├── scripts/                            # SQL scripts for ETL and transformations
-
-│   ├── bronze/                         # Scripts for extracting and loading raw data
-
-│   ├── silver/                         # Scripts for cleaning and transforming data
-
-│   ├── gold/                           # Scripts for creating analytical models
-
+│   ├── naming-conventions.md            # Consistent naming guidelines for tables, columns, and files
 
 │
-├── tests/                              # Test scripts and quality files
+
+├── scripts/                                       # SQL scripts for ETL and transformations
+
+│   ├── bronze/                                  # Scripts for extracting and loading raw data
+
+│   ├── silver/                                 # Scripts for cleaning and transforming data
+
+│   ├── gold/                                   # Scripts for creating analytical models
+
 
 │
-├── README.md                           # Project overview and instructions
+├── tests/                                      # Test scripts and quality files
+ 
+│
+├── README.md                                  # Project overview and instructions
 
 
-├── LICENSE                             # License information for the repository
+├── LICENSE                                  # License information for the repository
 
-├── .gitignore                          # Files and directories to be ignored by Git
+├── .gitignore                              # Files and directories to be ignored by Git
 
-└── requirements.txt                    # Dependencies and requirements for the project
+└── requirements.txt                         # Dependencies and requirements for the project
 
 
 _____________________________________________________________________________
