@@ -1,3 +1,20 @@
+data_flow.png
+<img width="2838" height="1492" alt="Screenshot 2026-05-04 210534" src="https://github.com/user-attachments/assets/917cb5fa-d636-400e-9d97-99c1dfb6077a" />
+
+data_architecture.png
+
+
+
+data_integration.png
+<img width="2832" height="1373" alt="Screenshot 2026-05-05 011742" src="https://github.com/user-attachments/assets/2dabba56-6262-4350-848b-1e272fd99b8e" />
+
+
+data_model.png
+<img width="2544" height="1474" alt="Screenshot 2026-05-04 210816" src="https://github.com/user-attachments/assets/074e6bb8-e629-455b-8922-144d8c6b79bb" />
+
+
+
+
 📌 Project Title :
 ( **End_To End Data Warehouse Project** )
 ______________________________________________________________________________
