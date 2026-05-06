@@ -17,17 +17,19 @@ The ETL pipeline transforms raw data into dimension and fact tables
 with proper data quality checks..>>
 
 ______________________________________________________________________________
-🏗️ Data Architecture
+🏗️ Data Architecture...
 The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers: 
 <img width="1938" height="1449" alt="Screenshot 2026-04-30 233912" src="https://github.com/user-attachments/assets/75e1c8b5-4faf-4e05-9e2b-acc5cd9a871d" />
 
-1-Bronze Layer: Stores raw data as-is from the source systems.
-Data is ingested from CSV Files into SQL Server Database.
+data_flow.drawio....
+![Uploading Screenshot 2026-05-04 210534.png…]()
 
-2-Silver Layer: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
 
-3-Gold Layer: Houses business-ready data modeled into a star schema required for reporting and analytics.
-______________________________________________________________________________
+data_integration.png....
+![Uploading Screenshot 2026-05-05 011742.png…]()
+
+data_model.drawio...
+![Uploading Screenshot 2026-05-04 210816.png…]()
 
 📝Project Requirements
 
