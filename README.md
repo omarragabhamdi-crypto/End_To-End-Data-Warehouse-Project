@@ -5,8 +5,15 @@ ______________________________________________________________________________
 
 Welcome to the The Data Warehouse Project :
 
-This project demonstrates a complete End-to-End Data Engineering pipeline, starting from raw data ingestion to building a fully structured Data Warehouse and generating actionable business insights,
-Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
+This project demonstrates a complete End-to-End Data Engineering pipeline , starting from raw data ingestion to building a fully structured Data Warehouse and generating actionable business insights,
+Designed as a portfolio project , it highlights industry best practices in data engineering .
+
+"I designed the pipeline following Data Modeling lifecycle:
+starting from conceptual understanding of business entities ,
+then logical structuring of relationships ,
+and finally implementing a physical star schema in the Gold layer.
+The ETL pipeline transforms raw data into dimension and fact tables
+with proper data quality checks..>>
 
 ______________________________________________________________________________
 🏗️ Data Architecture
