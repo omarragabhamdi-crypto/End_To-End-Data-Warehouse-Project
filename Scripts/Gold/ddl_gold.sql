@@ -26,7 +26,7 @@ SELECT
 	la.cntry AS country,
 	ci.cst_marital_status AS marital_status, 
 	CASE WHEN ci.cst_gndr != 'n/a' THEN ci.cst_gndr --CRM is the Master for gender Info
-		 ELSE ca.GEN
+		 ELSE COALESCE (ca.GEN , 'n\a')
 	END gender ,
 	ci.cst_create_date AS create_date,
 	ca.bdate AS birthdate	
