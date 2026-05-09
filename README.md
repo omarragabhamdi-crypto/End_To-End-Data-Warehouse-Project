@@ -19,17 +19,10 @@ with proper data quality checks..>>
 ______________________________________________________________________________
 🏗️ Data Architecture...
 The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers: 
-<img width="1938" height="1449" alt="Screenshot 2026-04-30 233912" src="https://github.com/user-attachments/assets/75e1c8b5-4faf-4e05-9e2b-acc5cd9a871d" />
-
-data_flow.drawio....
-![Uploading Screenshot 2026-05-04 210534.png…]()
-
-
-data_integration.png....
-![Uploading Screenshot 2026-05-05 011742.png…]()
+<img width="1444" height="1089" alt="ChatGPT Image May 9, 2026, 01_30_54 AM" src="https://github.com/user-attachments/assets/da348564-8361-426d-b87e-4c4be62e6ebc" />
 
 data_model.drawio...
-![Uploading Screenshot 2026-05-04 210816.png…]()
+<img width="1728" height="910" alt="3f780b35-6c80-4e3b-8bb1-3684478fc8aa" src="https://github.com/user-attachments/assets/cf6dac66-53ed-45d6-a11b-f8fd0a9cda1d" />
 
 📝Project Requirements
 
