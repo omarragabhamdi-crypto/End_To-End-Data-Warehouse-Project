@@ -42,30 +42,61 @@ ____________________________________________________________________________
 🚩Repository Structure
 ## Project Structure
 ```
-data-warehouse-project/
+data-engineering-project/
 │
-├── datasets/           # Raw datasets used for the project (ERP and CRM data)
+├── datasets/                           # Source datasets (CSV, ERP, CRM, APIs, etc.)
+│   ├── raw/                            # Original raw data before processing
+│   ├── staging/                        # Temporary/staging datasets
+│   └── processed/                      # Cleaned or transformed datasets
 │
-├── docs/               # Project documentation and architecture details
-│   ├── data_architecture.drawio     # Draw.io file shows the project's architecture
-│   ├── data_catalog.md              # Catalog of datasets, including field descriptions and metadata
-│   ├── data_flow.drawio             # Draw.io file for the data flow diagram
-│   ├── data_models.drawio           # Draw.io file for data models (star schema)
-│   ├── naming-conventions.md        # Consistent naming guidelines for tables, columns, and files
+├── docs/                               # Project documentation and architecture
+│   ├── business_requirements.md        # Business problem and project goals
+│   ├── data_architecture.drawio        # Overall architecture diagram
+│   ├── data_models.drawio              # Star schema / snowflake schema diagrams
+│   ├── data_catalog.md                 # Metadata and column descriptions
+│   ├── naming_conventions.md           # Naming standards for tables/files
+│   ├── pipeline_design.md              # ETL pipeline explanation
+│   └── quality_checks.md               # Data quality rules and validation logic
 │
-├── scripts/                        # SQL scripts for ETL and transformations
-│   ├── bronze/                     # Scripts for extracting and loading raw data
-│   ├── silver/                     # Scripts for cleaning and transforming data
-│   ├── gold/                       # Scripts for creating analytical models
+├── scripts/                            # SQL/Python ETL scripts
+│   ├── bronze/                         # Extract & raw loading scripts
+│   │   ├── ddl_bronze.sql
+│   │   └── proc_load_bronze.sql
+│   │
+│   ├── silver/                         # Cleaning, standardization, validation
+│   │   ├── ddl_silver.sql
+│   │   ├── proc_clean_data.sql
+│   │   └── proc_validate_data.sql
+│   │
+│   ├── gold/                           # Business-ready analytical layer
+│   │   ├── ddl_gold.sql
+│   │   ├── dim_customers.sql
+│   │   ├── dim_products.sql
+│   │   ├── fact_sales.sql
+│   │   └── analytical_views.sql
+│   │
+
 │
-├── tests/                          # Test scripts and quality files
+├── tests/                              # Testing and validation scripts
+│   ├── data_quality_tests.sql
+│   ├── duplicate_checks.sql
+│   ├── null_checks.sql
+│   └── reconciliation_tests.sql
 │
-├── README.md                      # Project overview and instructions
-├── LICENSE                         # License information for the repository
-├── .gitignore                     # Files and directories to be ignored by Git
-└── requirements.txt               # Dependencies and requirements for the project
-```
-_____________________________________________________________________________
+├── dashboards/                         # Power BI / Tableau screenshots or files
+│   ├── sales_dashboard.png
+│   └── customer_insights.png
+│
+├── automation/                         # Scheduling and orchestration
+│   ├── airflow_dag.py
+│   └── sql_agent_jobs.md
+│
+├── screenshots/                        # Project screenshots for README
+│
+├── README.md                           # Full project overview
+├── requirements.txt                    # Python dependencies
+
+____________________________________________________________________________
 
 🎯 Objectives
 Design and implement a scalable Data Warehouse architecture
